@@ -69,14 +69,16 @@ button{
     color: white;
 }
 .cadastro{
-    background-color: #BC13FE;
+    background: linear-gradient(45deg, rgba(93, 0, 255, 0.99), rgba(132, 0, 255, 0.7), rgba(187, 0, 255, 0.99),rgba(195, 33, 245, 0.99), rgba(93, 0, 255, 0.99),rgba(93, 0, 255, 0.99));
+    background-size: 400% 100%;
     color: white;
     transition: all 0.3s;
+    animation: gradient 5s linear infinite ;
 }
 .cadastro:hover{
     background-color: transparent;
-    color: #BC13FE;
     border: 2px solid #BC13FE;
+    transform: scale(1.08);
 }
 main{
     display: flex;
@@ -87,9 +89,16 @@ main{
     gap: 20px;
     text-align: center;
 }
-main h1,h2{
+main h2{
     color: white;
     
+}
+.text{
+    background: linear-gradient(45deg, #8000f8, #4b00f9, #aa3bff, #d400ff,  #8000f8);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s linear infinite ;
 }
 
 .login2{
@@ -104,16 +113,15 @@ main h1,h2{
     color: white;
 }
 .cadastro2{
-    background: linear-gradient(109deg, rgba(93, 0, 255, 0.99), rgba(132, 0, 255, 0.7), rgba(187, 0, 255, 0.99),rgba(93, 0, 255, 0.99));
+    background: linear-gradient(109deg, rgba(93, 0, 255, 0.99), rgba(132, 0, 255, 0.7), rgba(187, 0, 255, 0.99),rgba(195, 33, 245, 0.99), rgba(93, 0, 255, 0.99));
     background-size: 400% 100%;
     color: white;
     width: 150px;
     transition: all 0.3s;
-    animation: gradient 5s linear infinite;
+    animation: gradient 5s linear infinite ;
 }
 .cadastro2:hover{
-    background: transparent;
-    color: #BC13FE;
+    transform: scale(1.08);
     border: 2px solid #BC13FE;
 }
 @keyframes gradient {
